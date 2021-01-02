@@ -1,0 +1,59 @@
+ul.items, li.item {
+    list-style: none;
+}
+ul.items{
+    margin: 2em auto 0;
+    padding-top: 1em;
+    padding-bottom: 5em;
+    background-color: white;
+}
+li.item {
+    width: 100%;
+}
+
+div.media img, video, audio {
+    max-width: 60%;
+    outline: none;
+    margin-top:3.8em;
+}
+
+div.media.zoom img {
+    max-width: 95%;
+    margin-top:3.8em;
+}
+
+div.media-label {
+    padding-top: 5px;
+    font: 9px sans-serif;
+}
+
+div.media a:focus {
+    outline: none;
+}
+
+/* pagination */
+.pagination{
+    display: inline-block;
+    position: fixed;
+    bottom: 1.5em;
+    right: 10%;
+    width: 30%;
+    background: white;
+    opacity: 0.9;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    text-decoration: none;
+    width: 2em;
+}
+
+.pagination a.active {
+    background-color: #03a9f4;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: lightgrey;
+}
