@@ -2,35 +2,25 @@
 
 /**
 * Media management class
-*
-* Configuration :
-*   folderPath : path to media folder,
-*   types : which Media file types will be displayed,
-*   sortByName : to sort by name. Default false, Media will be sorted by last modified date,
-*   reverseOrder : to invert sort order, if 'true'
-*                   if sorted by date, ordered by newests Media (uses EXIF data if possible),
-*                   if sorted by name order is naturally inverted,
-*   dateFormat : date format in label (http://php.net/manual/en/function.date.php)
-*   pagination : [usePagination : true/false, MediaPerPage : number of Media per pages]
-*
 */
+
 
 require_once "Pagination.php";
 
 class Media {
 
-    public function __construct() {
-        $this->folderPath = "media/";
-        $this->imgTypes = "*.jpg,*.JPG,*.jpeg,*.JPEG,*.png,*.PNG,*.gif,*.GIF";
-        $this->vidTypes = "*.avi,*.AVI,*.mp4,*.MP4,*.mov,*.MOV";
-        $this->audioTypes = "*.mp3,*.MP3,*.ogg,*.OGG";
+    public function __construct($configs) {
+        $this->folderPath = $configs["folderPath"];
+        $this->imgTypes = $configs["imgTypes"];
+        $this->vidTypes = $configs["vidTypes"];
+        $this->audioTypes = $configs["audioTypes"];
         $this->types = "{".$this->imgTypes.",".$this->vidTypes.",".$this->audioTypes."}";
-        $this->sortByName = true;
-        $this->reverseOrder = false;
-        $this->dateFormat = "F d Y"; //"F d Y H:i:s"
+        $this->sortByName = $configs["sortByName"];
+        $this->reverseOrder = $configs["reverseOrder"];
+        $this->dateFormat = $configs["dateFormat"];
         $this->pagination = array (
-                    "usePagination" => false,
-                    "mediaPerPage" => 5
+                    "usePagination" => $configs["usePagination"],
+                    "mediaPerPage" => $configs["mediaPerPage"]
                     );
         # Media array list generation
         $this->MediaList = glob($this->folderPath.$this->types, GLOB_BRACE);
