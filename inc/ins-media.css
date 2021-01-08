@@ -17,6 +17,19 @@ div.media img, video, audio {
     margin-top:3.8em;
 }
 
+div.media.image a {
+    cursor: default;
+}
+
+audio, video {
+    cursor: pointer;
+}
+
+
+div.media a:focus {
+    outline: none;
+}
+
 div.media.zoom img {
     max-width: 95%;
     margin-top:3.8em;
@@ -25,10 +38,6 @@ div.media.zoom img {
 div.media-label {
     padding-top: 5px;
     font: 9px sans-serif;
-}
-
-div.media a:focus {
-    outline: none;
 }
 
 /* pagination */

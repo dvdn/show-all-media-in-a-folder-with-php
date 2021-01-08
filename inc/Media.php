@@ -126,12 +126,10 @@ class Media {
         $imageName = $imageInfos[0];
         $label = $imageInfos[1];
 
-
-        # html
         echo <<<EOT
         <li class="item">
-            <div class="media" onclick=this.classList.toggle("zoom");>
-                <a name="$image" href="#$image ">
+            <div class="media image" onclick=this.classList.toggle("zoom");>
+                <a name="$image" href="#$image">
                     <img src="$image" alt="$imageName" title="$imageName">
                 </a>
             </div>
@@ -155,8 +153,6 @@ EOT;
         $imageName = $imageInfos[0];
         $label = $imageInfos[1];
 
-
-        # html
         echo <<<EOT
         <li class="item">
             <div class="media">
