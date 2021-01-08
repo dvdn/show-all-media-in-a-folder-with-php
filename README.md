@@ -3,8 +3,6 @@ Show all media in a folder with PHP
 
 A simple webpage to display all images, video and audio files in a folder with PHP.
 
-To clear any doubt, yes it requires PHP :).
-
 Large images will be displayed smaller than their original dimensions. You can zoom them by clicking on it.
 
 Video and Audio files will display HTML5 controls and can be played by HTML5 player.
@@ -34,7 +32,7 @@ in the body
 
 
 ### Settings
-In [`config.php`](https://github.com/dvdn/show-all-media-in-a-folder-with-php/blob/master/inc/config.php) you can adjust the following settings:
+Adapt values in [`config.php`](https://github.com/dvdn/show-all-media-in-a-folder-with-php/blob/master/inc/config.php) according to your needs.
 
     *   folderPath : path to media folder,
     *   types : which Media file types will be displayed,
@@ -45,8 +43,6 @@ In [`config.php`](https://github.com/dvdn/show-all-media-in-a-folder-with-php/bl
     *   dateFormat : date format in label (http://php.net/manual/en/function.date.php)
     *   usePagination : true/false,
     *   mediaPerPage : number of Media per pages if usePagination true
-
-Adapt values according to your needs.
 
 ### Origin
 This project is an evolution of https://github.com/dvdn/show-all-images-in-a-folder-with-php.
