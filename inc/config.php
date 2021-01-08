@@ -25,5 +25,5 @@ return array(
     'displayDate' => true,
     'dateFormat' => "F d Y",
     'usePagination' => false,
-    'mediaPerPage' => 5
+    'mediaPerPage' => 9
 );

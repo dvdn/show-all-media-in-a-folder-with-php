@@ -41,16 +41,21 @@ div.media a:focus {
     background: white;
     opacity: 0.9;
 }
-
-.pagination a {
-    color: black;
+.pagination span {
     float: left;
+}
+.pagination span:first-child {
+    width: 2em;
+}
+.pagination a {
+    display: inline-block;
+    color: black;
     text-decoration: none;
     width: 2em;
 }
 
-.pagination a.active {
-    background-color: #03a9f4;
+.pagination a.active, .pagination span:first-child {
+    background-color: #e91e63;
     color: white;
 }
 

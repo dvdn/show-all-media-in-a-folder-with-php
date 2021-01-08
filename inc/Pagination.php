@@ -42,7 +42,7 @@ class Pagination {
      *
      */
     public function renderPaginationHtml($pageActive = 1) {
-        $html = '<div class="pagination">';
+        $html = '<div class="pagination"><span>&gt;</span><span>';
         for ( $i = 1 ; $i <= $this->last; $i++ ) {
             if ($i == $pageActive) {
                 $html .= '<a class="active" href="?page='.$i.'">'.$i.'</a>';
@@ -50,7 +50,7 @@ class Pagination {
                 $html .= '<a href="?page='.$i.'">'.$i.'</a>';
             }
         }
-        $html .= '</div>';
+        $html .= '</span></div>';
         return $html;
     }
 }
