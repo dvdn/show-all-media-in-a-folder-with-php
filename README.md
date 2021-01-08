@@ -34,16 +34,17 @@ in the body
 
 
 ### Settings
-In [`Media.php`](https://github.com/dvdn/show-all-media-in-a-folder-with-php/blob/master/inc/Media.php#L20) you can adjust the following settings:
+In [`config.php`](https://github.com/dvdn/show-all-media-in-a-folder-with-php/blob/master/inc/config.php) you can adjust the following settings:
 
     *   folderPath : path to media folder,
-    *   types : which media file types will be displayed,
-    *   sortByName : to sort by name. Default false, media will be sorted by last modified date,
+    *   types : which Media file types will be displayed,
+    *   sortByName : to sort by name. Default false, Media will be sorted by last modified date,
     *   reverseOrder : to invert sort order, if 'true'
-    *                   if sorted by date, ordered by newests media (uses EXIF data if possible),
+    *                   if sorted by date, ordered by newests Media (uses EXIF data if possible),
     *                   if sorted by name order is naturally inverted,
     *   dateFormat : date format in label (http://php.net/manual/en/function.date.php)
-    *   pagination : [usePagination : true/false, mediaPerPage : number of media per pages]
+    *   usePagination : true/false,
+    *   mediaPerPage : number of Media per pages if usePagination true
 
 Adapt values according to your needs.
 
@@ -51,7 +52,7 @@ Adapt values according to your needs.
 This project is an evolution of https://github.com/dvdn/show-all-images-in-a-folder-with-php.
 
 Features addition :
-- support Audio and Video files
+- support for Audio and Video files
 
 ### Contributions
 Very welcomed.
