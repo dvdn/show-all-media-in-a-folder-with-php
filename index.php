@@ -14,15 +14,9 @@
 <body>
     <header><div><h1>Show all media in my folder</h1></div></header>
 
-<?php
-// PHP debug
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-?>
-
     <!-- media insertion -->
     <?php include "inc/ins-media.php"; ?>
+
     <footer><div><?php echo date("Y"); ?> // source code <a target="_blank" href="https://github.com/dvdn/show-all-media-in-a-folder-with-php">dvdn/show-all-media-in-a-folder-with-php</a></div></footer>
 </body>
 </html>
