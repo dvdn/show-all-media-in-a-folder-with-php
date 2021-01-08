@@ -17,6 +17,7 @@ class Media {
         $this->types = "{".$this->imgTypes.",".$this->vidTypes.",".$this->audioTypes."}";
         $this->sortByName = $configs["sortByName"];
         $this->reverseOrder = $configs["reverseOrder"];
+        $this->displayDate = $configs["displayDate"];
         $this->dateFormat = $configs["dateFormat"];
         $this->pagination = array (
                     "usePagination" => $configs["usePagination"],
@@ -99,10 +100,13 @@ class Media {
         $mediaName = basename($media);
         $mediaName = pathinfo($mediaName, PATHINFO_FILENAME);
 
-        $date = date($this->dateFormat , $this->getLastTimestamp($media));
-        $dateLabel = '(last modified : ' . $date . ')';
+        $label = $mediaName;
 
-        $label = $mediaName.' '.$dateLabel;
+        if ($this->displayDate){
+            $date = date($this->dateFormat , $this->getLastTimestamp($media));
+            $dateLabel = '(last modified : ' . $date . ')';
+            $label .= ' '.$dateLabel;
+        }
 
         return array($mediaName, $label);
 
