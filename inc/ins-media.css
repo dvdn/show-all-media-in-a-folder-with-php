@@ -37,14 +37,12 @@ div.media a:focus {
     position: fixed;
     bottom: 1.5em;
     right: 10%;
-    width: 30%;
+    width: 80%;
     background: white;
     opacity: 0.9;
 }
-.pagination span {
-    float: left;
-}
 .pagination span:first-child {
+    display: inline-block;
     width: 2em;
 }
 .pagination a {

@@ -44,11 +44,11 @@ class Pagination {
     public function renderPaginationHtml($pageActive = 1) {
         $html = '<div class="pagination"><span>&gt;</span><span>';
         for ( $i = 1 ; $i <= $this->last; $i++ ) {
+            $html .= '<a title="page '.$i.'" href="?page='.$i.'"';
             if ($i == $pageActive) {
-                $html .= '<a class="active" href="?page='.$i.'">'.$i.'</a>';
-            } else {
-                $html .= '<a href="?page='.$i.'">'.$i.'</a>';
+                $html .= 'class="active"';
             }
+            $html .= '>'.$i.'</a>';
         }
         $html .= '</span></div>';
         return $html;
