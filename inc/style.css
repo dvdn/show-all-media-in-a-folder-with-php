@@ -14,21 +14,17 @@ body{
     background: #e91e63 linear-gradient(45deg, #000 15%, #e91e63 85%);
 }
 header, footer{
-    width: 100%;
     position: fixed;
 }
-header div, footer div{
-    position: fixed;
-    margin-left: 10%;
-}
-header div, footer div, ul{
+header, footer, ul{
     width: 80%;
+    margin-left: 10%;
     background-color: white;
 }
-header div{
+header{
     border-bottom: 1px dotted grey;
 }
-header, header div{
+header{
     top: 0;
     height:3.8em;
 }
@@ -36,12 +32,10 @@ header, header div{
         margin-top: 0.6em;
         font-size: 1.4em;
     }
-footer, footer div{
+footer{
     bottom: 0;
     font-size: 0.8em;
     line-height: 2.2em;
-}
-footer div{
     border-top: 1px dotted grey;
 }
 footer a{
