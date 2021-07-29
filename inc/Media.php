@@ -128,10 +128,8 @@ class Media {
 
         echo <<<EOT
         <li class="item">
-            <div class="media image" onclick=this.classList.toggle("zoom");>
-                <a name="$image" href="#$image">
-                    <img src="$image" alt="$imageName" title="$imageName">
-                </a>
+            <div class="media image">
+                <img src="$image" alt="$imageName" title="$imageName">
             </div>
             <div class="media-label">$label</div>
         </li>
@@ -156,7 +154,7 @@ EOT;
         echo <<<EOT
         <li class="item">
             <div class="media">
-                <$type controls= "controls" src="$media">
+                <$type controls= "controls" src="$media" title="$imageName">
                     Your browser does not support the $type element.
                 </$type>
             </div>
