@@ -3,7 +3,7 @@ Show all media in a folder with PHP
 
 A simple webpage to display all images, video and audio files in a folder with PHP.
 
-Large images will be displayed smaller than their original dimensions. You can zoom them by clicking on it.
+Large images will be displayed smaller than their original dimensions.
 
 Video and Audio files will display HTML5 controls and can be played by HTML5 player.
 
