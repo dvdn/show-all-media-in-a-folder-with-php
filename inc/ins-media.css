@@ -1,38 +1,25 @@
 ul.items, li.item {
     list-style: none;
 }
+
 ul.items{
-    margin: 2em auto 0;
-    padding-top: 1em;
-    padding-bottom: 5em;
+    margin: 3.8em auto 0;
+    padding: 1em 0;
     background-color: white;
 }
+
 li.item {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 4em;
 }
 
-div.media img, video, audio {
-    max-width: 60%;
-    outline: none;
-    margin-top:3.8em;
-}
-
-div.media.image a {
-    cursor: default;
+div.media *{
+    max-width: 100%;
 }
 
 audio, video {
     cursor: pointer;
-}
-
-
-div.media a:focus {
-    outline: none;
-}
-
-div.media.zoom img {
-    max-width: 95%;
-    margin-top:3.8em;
 }
 
 div.media-label {
