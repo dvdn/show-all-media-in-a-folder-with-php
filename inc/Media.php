@@ -122,14 +122,14 @@ class Media {
      */
     private function renderImageHtml($image) {
 
-        $imageInfos = $this->getMediaInfo($image);
-        $imageName = $imageInfos[0];
-        $label = $imageInfos[1];
+        $mediaInfo = $this->getMediaInfo($image);
+        $mediaName = $mediaInfo[0];
+        $label = $mediaInfo[1];
 
         echo <<<EOT
         <li class="item">
             <div class="media image">
-                <img src="$image" alt="$imageName" title="$imageName">
+                <img src="$image" alt="$mediaName" title="$mediaName">
             </div>
             <div class="media-label">$label</div>
         </li>
@@ -147,14 +147,14 @@ EOT;
      */
     private function renderHtmlMedia($media, $type) {
 
-        $imageInfos = $this->getMediaInfo($media);
-        $imageName = $imageInfos[0];
-        $label = $imageInfos[1];
+        $mediaInfo = $this->getMediaInfo($media);
+        $mediaName = $mediaInfo[0];
+        $label = $mediaInfo[1];
 
         echo <<<EOT
         <li class="item">
             <div class="media">
-                <$type controls= "controls" src="$media" title="$imageName">
+                <$type controls= "controls" src="$media" title="$mediaName">
                     Your browser does not support the $type element.
                 </$type>
             </div>
