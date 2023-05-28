@@ -7,7 +7,7 @@
 *   types : which Media file types will be displayed,
 *   sortByName : to sort by name. Default false, Media will be sorted by last modified date,
 *   reverseOrder : to invert sort order, if 'true'
-*                   if sorted by date, ordered by newests Media (uses EXIF data if possible),
+*                   if sorted by date, ordered by recentest Media (uses EXIF data if possible),
 *                   if sorted by name order is naturally inverted,
 *   displayDate : true/false, display date in label
 *   dateFormat : date format in label (http://php.net/manual/en/function.date.php)

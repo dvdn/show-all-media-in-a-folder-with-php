@@ -17,6 +17,6 @@
     <!-- media insertion -->
     <?php include "inc/ins-media.php"; ?>
 
-    <footer><div><?php echo date("Y"); ?> // source code <a target="_blank" href="https://github.com/dvdn/show-all-media-in-a-folder-with-php">dvdn/show-all-media-in-a-folder-with-php</a></div></footer>
+    <footer><div>source code <a target="_blank" href="https://github.com/dvdn/show-all-media-in-a-folder-with-php">dvdn/show-all-media-in-a-folder-with-php</a></div></footer>
 </body>
 </html>
