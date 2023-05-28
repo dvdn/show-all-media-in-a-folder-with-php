@@ -7,8 +7,12 @@ ul.items{
     padding: 1em 0;
     background-color: white;
 }
-
-li.item {
+@media only screen and (max-width: 600px) {
+    ul.items{
+         margin: 2em auto 0;
+    }
+ }
+ li.item {
     width: 80%;
     margin-left: 10%;
     margin-bottom: 4em;
@@ -31,11 +35,11 @@ div.media-label {
 .pagination{
     display: inline-block;
     position: fixed;
-    bottom: 1.5em;
+    bottom: 0.8em;
     right: 10%;
     width: 80%;
+    font-size: 1.2em;
     background: white;
-    opacity: 0.9;
 }
 .pagination span:first-child {
     display: inline-block;
